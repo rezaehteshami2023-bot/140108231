@@ -48,7 +48,6 @@
             0% {
                 background-position: 0% 50%;
             }
-
             100% {
                 background-position: 100% 50%;
             }
@@ -149,7 +148,6 @@
                 opacity: 0;
                 transform: translateY(30px);
             }
-
             to {
                 opacity: 1;
                 transform: translateY(0);
@@ -251,6 +249,37 @@
             box-shadow: 0 12px 30px -5px rgba(243, 156, 18, 0.5);
         }
 
+        .btn-Eitaa {
+            background: linear-gradient(135deg, #6bcb77, #4d96ff);
+            box-shadow: 0 8px 25px -5px rgba(107, 203, 119, 0.3);
+        }
+
+        .btn-Eitaa:hover {
+            background: linear-gradient(135deg, #5abf68, #3d8af0);
+        }
+
+        .btn-bale {
+            background: linear-gradient(135deg, #00d2ff, #3a7bd5);
+            box-shadow: 0 8px 25px -5px rgba(0, 210, 255, 0.3);
+        }
+
+        .btn-bale:hover {
+            background: linear-gradient(135deg, #00b8e6, #2a6bb5);
+            box-shadow: 0 12px 30px -5px rgba(0, 210, 255, 0.5);
+        }
+
+        .btn-robika {
+            background: linear-gradient(135deg, #f7971e, #ffd200);
+            box-shadow: 0 8px 25px -5px rgba(247, 151, 30, 0.3);
+            color: #1a1a2e;
+        }
+
+        .btn-robika:hover {
+            background: linear-gradient(135deg, #e0850e, #f0c000);
+            box-shadow: 0 12px 30px -5px rgba(247, 151, 30, 0.5);
+            color: #1a1a2e;
+        }
+
         .no-video {
             padding: 80px 35px;
             text-align: center;
@@ -305,7 +334,6 @@
                 opacity: 0;
                 transform: scale(.95);
             }
-
             to {
                 opacity: 1;
                 transform: scale(1);
@@ -519,168 +547,6 @@
             margin-left: 10px;
         }
 
-        #shareModal {
-            display: none;
-            position: fixed;
-            inset: 0;
-            z-index: 2000;
-            background: rgba(0, 0, 0, .85);
-            backdrop-filter: blur(20px);
-            padding: 30px;
-            align-items: center;
-            justify-content: center;
-        }
-
-        #shareModal .share-box {
-            background: rgba(255, 255, 255, .08);
-            backdrop-filter: blur(24px);
-            border-radius: 40px;
-            padding: 40px 35px;
-            max-width: 520px;
-            width: 100%;
-            border: 1px solid rgba(255, 255, 255, .1);
-            box-shadow: 0 30px 60px rgba(0, 0, 0, .5);
-            animation: fadeInUp .4s ease;
-        }
-
-        @keyframes fadeInUp {
-            from {
-                opacity: 0;
-                transform: translateY(30px) scale(.96);
-            }
-
-            to {
-                opacity: 1;
-                transform: translateY(0) scale(1);
-            }
-        }
-
-        #shareModal .share-box h2 {
-            text-align: center;
-            font-size: 28px;
-            font-weight: 800;
-            margin-bottom: 4px;
-            background: linear-gradient(135deg, #ffd93d, #ff6b6b);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
-
-        #shareModal .share-box .share-sub {
-            text-align: center;
-            color: #cfcfe6;
-            font-size: 15px;
-            opacity: .7;
-            margin-bottom: 25px;
-        }
-
-        .share-grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 12px;
-        }
-
-        .share-btn {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 6px;
-            padding: 16px 10px;
-            border-radius: 20px;
-            border: 1px solid rgba(255, 255, 255, .08);
-            background: rgba(255, 255, 255, .05);
-            cursor: pointer;
-            transition: all .3s ease;
-            color: #fff;
-            font-size: 13px;
-            font-weight: 600;
-            text-decoration: none;
-        }
-
-        .share-btn:hover {
-            transform: translateY(-4px) scale(1.04);
-            border-color: rgba(255, 255, 255, .2);
-            box-shadow: 0 10px 30px rgba(0, 0, 0, .3);
-        }
-
-        .share-btn .icon {
-            font-size: 36px;
-        }
-
-        .share-btn.ita {
-            background: rgba(107, 203, 119, .15);
-            border-color: rgba(107, 203, 119, .2);
-        }
-
-        .share-btn.ita:hover {
-            background: rgba(107, 203, 119, .25);
-        }
-
-        .share-btn.telegram {
-            background: rgba(77, 150, 255, .15);
-            border-color: rgba(77, 150, 255, .2);
-        }
-
-        .share-btn.telegram:hover {
-            background: rgba(77, 150, 255, .25);
-        }
-
-        .share-btn.whatsapp {
-            background: rgba(37, 211, 102, .15);
-            border-color: rgba(37, 211, 102, .2);
-        }
-
-        .share-btn.whatsapp:hover {
-            background: rgba(37, 211, 102, .25);
-        }
-
-        .share-btn.copy {
-            background: rgba(255, 215, 0, .15);
-            border-color: rgba(255, 215, 0, .2);
-        }
-
-        .share-btn.copy:hover {
-            background: rgba(255, 215, 0, .25);
-        }
-
-        .share-btn.twitter {
-            background: rgba(29, 161, 242, .15);
-            border-color: rgba(29, 161, 242, .2);
-        }
-
-        .share-btn.twitter:hover {
-            background: rgba(29, 161, 242, .25);
-        }
-
-        .share-btn.facebook {
-            background: rgba(24, 119, 242, .15);
-            border-color: rgba(24, 119, 242, .2);
-        }
-
-        .share-btn.facebook:hover {
-            background: rgba(24, 119, 242, .25);
-        }
-
-        .share-close {
-            display: block;
-            width: 100%;
-            margin-top: 18px;
-            padding: 14px;
-            border: none;
-            border-radius: 30px;
-            background: rgba(255, 255, 255, .08);
-            color: #fff;
-            font-size: 16px;
-            font-weight: 600;
-            cursor: pointer;
-            transition: all .3s ease;
-            border: 1px solid rgba(255, 255, 255, .06);
-        }
-
-        .share-close:hover {
-            background: rgba(255, 255, 255, .15);
-            transform: scale(1.02);
-        }
-
         .stats-bar {
             display: flex;
             justify-content: center;
@@ -715,87 +581,68 @@
             h1 {
                 font-size: 34px;
             }
-
             .subtitle {
                 font-size: 17px;
                 margin-bottom: 20px;
             }
-
             .btn-watch-all {
                 font-size: 16px;
                 padding: 14px 30px;
                 margin-bottom: 30px;
             }
-
             .card-img-wrap {
                 height: 200px;
             }
-
             .gallery {
                 gap: 18px;
                 grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
             }
-
             #detail {
                 padding: 20px;
             }
-
             #detail h2 {
                 font-size: 28px;
             }
-
             #detail p {
                 font-size: 16px;
             }
-
             .btn {
                 padding: 12px 25px;
                 font-size: 15px;
                 width: 100%;
                 justify-content: center;
             }
-
             .detail-actions {
                 flex-direction: column;
             }
-
             #detail video {
                 height: 400px;
             }
-
             #videoLibrary .modal-header h2 {
                 font-size: 24px;
             }
-
             .video-list {
                 grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
                 gap: 18px;
             }
-
             .video-item .thumb {
                 height: 130px;
             }
-
             #videoPlayerModal {
                 padding: 20px;
             }
-
             #videoPlayerModal .player-wrapper video {
                 height: 300px;
             }
-
             .stats-bar {
                 gap: 15px;
             }
-
             .stats-bar .stat-item {
                 padding: 8px 15px;
             }
-
             .stats-bar .stat-item .number {
                 font-size: 20px;
             }
-
             #toast {
                 right: 15px;
                 left: 15px;
@@ -803,59 +650,31 @@
                 font-size: 14px;
                 padding: 14px 20px;
             }
-
-            #shareModal .share-box {
-                padding: 30px 20px;
-            }
-
-            .share-grid {
-                grid-template-columns: repeat(2, 1fr);
-            }
         }
 
         @media(max-width:480px) {
             .card-img-wrap {
                 height: 160px;
             }
-
             .gallery {
                 grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
                 gap: 12px;
             }
-
             .card h3 {
                 font-size: 15px;
                 padding: 14px 10px;
             }
-
             #detail video {
                 height: 280px;
             }
-
             #videoLibrary {
                 padding: 20px 12px;
             }
-
             .video-list {
                 grid-template-columns: 1fr;
             }
-
             #videoPlayerModal .player-wrapper video {
                 height: 220px;
-            }
-
-            .share-grid {
-                grid-template-columns: repeat(2, 1fr);
-                gap: 10px;
-            }
-
-            .share-btn .icon {
-                font-size: 28px;
-            }
-
-            .share-btn {
-                font-size: 12px;
-                padding: 12px 8px;
             }
         }
     </style>
@@ -942,73 +761,42 @@
             <div class="detail-actions">
                 <button class="btn" onclick="backGallery()">🔙 بازگشت</button>
                 <button class="btn btn-secondary" onclick="backGallery()">✨ کارت‌ها</button>
-                <button class="btn btn-success" onclick="openFullVideo()">🎬 بزرگ</button>
-                <button class="btn btn-share" onclick="openShareModal()">📤 اشتراک</button>
+                <button class="btn btn-success" onclick="openFullVideo()">🎬 نمایش بزرگ</button>
+                <button class="btn btn-share" onclick="shareOnMobile()">📤 اشتراک‌گذاری</button>
                 <button class="btn btn-copy-link" onclick="copySiteLink()">🔗 کپی لینک</button>
+                
+                <button class="btn btn-Eitaa" onclick="shareOnEitaa()">🟢 اشتراک در ایتا</button>
+                <button class="btn btn-bale" onclick="shareOnBale()">🔵 اشتراک در بله</button>
+                <button class="btn btn-robika" onclick="shareOnRobika()">🟡 اشتراک در روبیکا</button>
             </div>
 
         </div>
 
     </div>
 
-    <!-- شریت مودال -->
-    <div id="shareModal">
-        <div class="share-box">
-            <h2>📤 اشتراک‌گذاری</h2>
-            <p class="share-sub" id="shareCharName">اشتراک‌گذاری شخصیت</p>
-            <div class="share-grid">
-                <button class="share-btn ita" onclick="shareTo('ita')">
-                    <span class="icon">🟢</span>
-                    <span>ایتا</span>
-                </button>
-                <button class="share-btn telegram" onclick="shareTo('telegram')">
-                    <span class="icon">✈️</span>
-                    <span>تلگرام</span>
-                </button>
-                <button class="share-btn whatsapp" onclick="shareTo('whatsapp')">
-                    <span class="icon">💚</span>
-                    <span>واتساپ</span>
-                </button>
-                <button class="share-btn copy" onclick="shareTo('copy')">
-                    <span class="icon">📋</span>
-                    <span>کپی متن</span>
-                </button>
-                <button class="share-btn twitter" onclick="shareTo('twitter')">
-                    <span class="icon">🐦</span>
-                    <span>توییتر</span>
-                </button>
-                <button class="share-btn facebook" onclick="shareTo('facebook')">
-                    <span class="icon">👍</span>
-                    <span>فیسبوک</span>
-                </button>
-            </div>
-            <button class="share-close" onclick="closeShareModal()">✖ بستن</button>
-        </div>
-    </div>
-
-    <!-- کتابخانه ویدیو -->
+    <!-- Video Library -->
     <div id="videoLibrary">
         <div class="modal-header">
             <h2>🎬 کتابخانه ویدیوها</h2>
-            <button class="modal-close" onclick="closeVideoLibrary()">✖ بستن</button>
+            <button class="modal-close" onclick="closeVideoLibrary()">✖️ بستن</button>
         </div>
         <div id="videoListContainer" class="video-list"></div>
     </div>
 
-    <!-- پلیر ویدیو -->
+    <!-- Video Player -->
     <div id="videoPlayerModal">
         <div class="player-wrapper">
-            <video id="libraryPlayer" controls autoplay playsInline>
+            <video id="libraryPlayer" controls autoplay playsinline>
                 <source src="" type="video/mp4">
             </video>
             <div class="player-controls">
-                <button class="player-close" onclick="closePlayerModal()">✖ بستن</button>
-                <span class="player-title" id="playerTitle">عنوان</span>
+                <button class="player-close" onclick="closePlayerModal()">✖️ بستن</button>
+                <span class="player-title" id="playerTitle"></span>
             </div>
         </div>
     </div>
 
-    <!-- توست -->
+    <!-- Toast -->
     <div id="toast">
         <span class="toast-icon">✅</span>
         <span id="toastMessage"></span>
@@ -1016,18 +804,9 @@
 
     <script>
         // =============================================
-        // 🌐 لینک سایت - بعد از آپلود تغییر بده
+        // 🌐 لینک سایت (لینک درست)
         // =============================================
-        // 🔴 اینجا آدرس سایتت رو بعد از آپلود بذار:
-        var SITE_URL = 'https://rezaehteshami2023-bot.github.io/krackter-anime.html/'; // ← لینک جدیدت رو بذار
-        // اگر هنوز آپلود نکردی، از آدرس فعلی استفاده کن
-        if (window.location.protocol === 'file:') {
-            SITE_URL = window.location.href;
-            console.log('⚠️ فایل به صورت محلی باز شده! برای استفاده در موبایل آپلود کن.');
-            console.log('📌 راهنما: https://vercel.com یا https://netlify.com');
-        }
-
-        console.log('🌐 لینک سایت: ' + SITE_URL);
+        var SITE_URL = 'https://rezaehteshami2023-bot.github.io/140108231/';
 
         // =============================================
         // DATA
@@ -1068,7 +847,7 @@
         try {
             var saved = localStorage.getItem('animeViews');
             if (saved) viewCounts = JSON.parse(saved);
-        } catch (e) { }
+        } catch (e) {}
 
         function updateTotalViews() {
             var total = 0;
@@ -1081,7 +860,7 @@
             viewCounts[index] = (viewCounts[index] || 0) + 1;
             try {
                 localStorage.setItem('animeViews', JSON.stringify(viewCounts));
-            } catch (e) { }
+            } catch (e) {}
             updateTotalViews();
         }
 
@@ -1095,7 +874,7 @@
             toast.querySelector('.toast-icon').textContent = icon;
             toast.classList.add('show');
             clearTimeout(toastTimeout);
-            toastTimeout = setTimeout(function () {
+            toastTimeout = setTimeout(function() {
                 toast.classList.remove('show');
             }, 3000);
         }
@@ -1106,9 +885,9 @@
         function copySiteLink() {
             var link = SITE_URL;
             if (navigator.clipboard && navigator.clipboard.writeText) {
-                navigator.clipboard.writeText(link).then(function () {
+                navigator.clipboard.writeText(link).then(function() {
                     showToast('لینک سایت کپی شد! 📋', '🔗');
-                }).catch(function () {
+                }).catch(function() {
                     copyFallback(link);
                 });
             } else {
@@ -1131,6 +910,66 @@
             } catch (e) {
                 showToast('لطفاً دستی کپی کنید', '📝');
             }
+        }
+
+        // =============================================
+        // 📤 اشتراک‌گذاری عمومی (Web Share API)
+        // =============================================
+        function shareOnMobile() {
+            var char = characters[currentIndex];
+            var text = '🎬 ' + char.name + '\n📖 ' + char.story + '\n\n✨ از گالری Krackter Anime دیدن کنید!';
+
+            if (navigator.share) {
+                navigator.share({
+                    title: char.name,
+                    text: text,
+                    url: SITE_URL
+                }).then(function() {
+                    showToast('با موفقیت به اشتراک گذاشته شد! 🎉', '🎉');
+                }).catch(function(err) {
+                    if (err.name !== 'AbortError') {
+                        showToast('خطا در اشتراک‌گذاری', '⚠️');
+                    }
+                });
+            } else {
+                var fullText = text + '\n' + SITE_URL;
+                copyFallback(fullText);
+                showToast('متن کپی شد! 📋', '📋');
+            }
+        }
+
+        // =============================================
+        // 🟢 اشتراک در ایتا (Eitaa) - لینک رسمی
+        // =============================================
+        function shareOnEitaa() {
+            var char = characters[currentIndex];
+            var text = '🎬 ' + char.name + '\n📖 ' + char.story + '\n\n✨ از گالری Krackter Anime دیدن کنید!';
+            var url = 'https://eitaa.com/share/url?url=' + encodeURIComponent(SITE_URL) + '&text=' + encodeURIComponent(text);
+            window.open(url, '_blank');
+            showToast('در حال باز کردن ایتا...', '🟢');
+        }
+
+        // =============================================
+        // 🔵 اشتراک در بله (Bale) - لینک رسمی با متن و لینک
+        // =============================================
+        function shareOnBale() {
+            var char = characters[currentIndex];
+            var text = '🎬 ' + char.name + '\n📖 ' + char.story + '\n\n✨ از گالری Krackter Anime دیدن کنید!\n' + SITE_URL;
+            // استفاده از لینک رسمی وب‌سایت بله با پارامتر text
+            var url = 'https://web.bale.ai/chat/share?text=' + encodeURIComponent(text);
+            window.open(url, '_blank');
+            showToast('در حال باز کردن بله...', '🔵');
+        }
+
+        // =============================================
+        // 🟡 اشتراک در روبیکا (Rubika) - لینک رسمی
+        // =============================================
+        function shareOnRobika() {
+            var char = characters[currentIndex];
+            var text = '🎬 ' + char.name + '\n📖 ' + char.story + '\n\n✨ از گالری Krackter Anime دیدن کنید!\n' + SITE_URL;
+            var url = 'https://rubika.ir/share?text=' + encodeURIComponent(text);
+            window.open(url, '_blank');
+            showToast('در حال باز کردن روبیکا...', '🟡');
         }
 
         // =============================================
@@ -1160,7 +999,7 @@
             video.style.marginBottom = '20px';
             video.style.background = '#000';
 
-            video.onerror = function () {
+            video.onerror = function() {
                 this.style.display = 'none';
                 var msg = document.createElement('div');
                 msg.className = 'no-video';
@@ -1206,87 +1045,6 @@
         }
 
         // =============================================
-        // SHARE FUNCTIONS
-        // =============================================
-
-        function openShareModal() {
-            var char = characters[currentIndex];
-            document.getElementById('shareCharName').textContent = 'اشتراک‌گذاری "' + char.name + '"';
-            document.getElementById('shareModal').style.display = 'flex';
-            document.body.style.overflow = 'hidden';
-        }
-
-        function closeShareModal() {
-            document.getElementById('shareModal').style.display = 'none';
-            document.body.style.overflow = '';
-        }
-
-        function shareTo(platform) {
-            var char = characters[currentIndex];
-            var text = '🎬 ' + char.name + '\n📖 ' + char.story + '\n\n✨ از گالری Krackter Anime دیدن کنید!';
-            var url = SITE_URL;
-            var shareUrl = '';
-
-            switch (platform) {
-                case 'ita':
-                    shareUrl = 'https://ita.ir/?text=' + encodeURIComponent(text + '\n' + url);
-                    break;
-                case 'telegram':
-                    shareUrl = 'https://t.me/share/url?url=' + encodeURIComponent(url) + '&text=' + encodeURIComponent(
-                        text);
-                    break;
-                case 'whatsapp':
-                    shareUrl = 'https://wa.me/?text=' + encodeURIComponent(text + '\n' + url);
-                    break;
-                case 'twitter':
-                    shareUrl = 'https://twitter.com/intent/tweet?text=' + encodeURIComponent(text) + '&url=' +
-                        encodeURIComponent(url);
-                    break;
-                case 'facebook':
-                    shareUrl = 'https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent(url) + '&quote=' +
-                        encodeURIComponent(text);
-                    break;
-                case 'copy':
-                    try {
-                        var fullText = text + '\n' + url;
-                        if (navigator.clipboard && navigator.clipboard.writeText) {
-                            navigator.clipboard.writeText(fullText).then(function () {
-                                showToast('متن کپی شد! 📋', '📋');
-                            }).catch(function () {
-                                copyFallback(fullText);
-                            });
-                        } else {
-                            copyFallback(fullText);
-                        }
-                    } catch (e) {
-                        copyFallback(text + '\n' + url);
-                    }
-                    closeShareModal();
-                    return;
-                default:
-                    showToast('پلتفرم مورد نظر پشتیبانی نمی‌شود', '⚠️');
-                    return;
-            }
-
-            if (shareUrl) {
-                window.open(shareUrl, '_blank');
-                var names = {
-                    'ita': 'ایتا',
-                    'telegram': 'تلگرام',
-                    'whatsapp': 'واتساپ',
-                    'twitter': 'توییتر',
-                    'facebook': 'فیسبوک'
-                };
-                showToast('در حال باز کردن ' + (names[platform] || platform) + ' ...', '📤');
-                setTimeout(closeShareModal, 500);
-            }
-        }
-
-        document.getElementById('shareModal').addEventListener('click', function (e) {
-            if (e.target === this) closeShareModal();
-        });
-
-        // =============================================
         // VIDEO LIBRARY
         // =============================================
         function openVideoLibrary() {
@@ -1312,7 +1070,7 @@
                     </div>
                 `;
 
-                item.addEventListener('click', function (e) {
+                item.addEventListener('click', function(e) {
                     if (!e.target.closest('.play-btn-small')) {
                         var idx = parseInt(this.dataset.index);
                         playFromLibrary(idx);
@@ -1362,11 +1120,9 @@
         // =============================================
         // KEYBOARD SHORTCUTS
         // =============================================
-        document.addEventListener('keydown', function (e) {
+        document.addEventListener('keydown', function(e) {
             if (e.key === 'Escape') {
-                if (document.getElementById('shareModal').style.display === 'flex') {
-                    closeShareModal();
-                } else if (document.getElementById('videoPlayerModal').style.display === 'flex') {
+                if (document.getElementById('videoPlayerModal').style.display === 'flex') {
                     closePlayerModal();
                 } else if (document.getElementById('videoLibrary').style.display === 'block') {
                     closeVideoLibrary();
@@ -1374,22 +1130,22 @@
             }
         });
 
-        document.getElementById('videoLibrary').addEventListener('click', function (e) {
+        document.getElementById('videoLibrary').addEventListener('click', function(e) {
             if (e.target === this) closeVideoLibrary();
         });
 
-        document.getElementById('videoPlayerModal').addEventListener('click', function (e) {
+        document.getElementById('videoPlayerModal').addEventListener('click', function(e) {
             if (e.target === this) closePlayerModal();
         });
 
         // =============================================
         // SECURITY
         // =============================================
-        document.addEventListener('contextmenu', function (e) {
+        document.addEventListener('contextmenu', function(e) {
             e.preventDefault();
         });
 
-        document.addEventListener('keydown', function (e) {
+        document.addEventListener('keydown', function(e) {
             if (e.key === 'F12' || (e.ctrlKey && e.key === 'u') || (e.ctrlKey && e.shiftKey && e.key === 'I')) {
                 e.preventDefault();
             }
@@ -1397,18 +1153,7 @@
 
         console.log('🔥 Krackter Anime - گالری انیمه');
         console.log('🌐 لینک سایت: ' + SITE_URL);
-        console.log('');
-        console.log('📌 IMPORTANT:');
-        console.log('   اگر این خطا را می‌بینی: ERR_CONNECTION_CLOSED');
-        console.log('   یعنی فایل روی کامپیوتر لوکال هست و گوشی نمیتونه بهش دسترسی داشته باشه.');
-        console.log('');
-        console.log('✅ راه حل:');
-        console.log('   1. برو به https://vercel.com');
-        console.log('   2. ثبت‌نام کن');
-        console.log('   3. فایل رو آپلود کن');
-        console.log('   4. لینک دریافت کن و توی SITE_URL بذار');
-        console.log('');
-        console.log('✨ از تماشا لذت ببرید!');
+        console.log('✅ برای اشتراک‌گذاری از این لینک استفاده کن: ' + SITE_URL);
     </script>
 
 </body>
